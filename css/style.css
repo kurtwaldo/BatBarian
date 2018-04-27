@@ -1,0 +1,352 @@
+
+body,
+.dialog,
+.dialog-box {
+  min-width: 320px;
+}
+
+/*////////////////////////////////////////
+/ Styling for the top part of the page!
+////////////////////////////////////////*/
+
+.info-bar {
+    color: white;
+    font-family: "Oswald", sans-serif;
+    background-color: #282424;
+    padding: 10px;
+    display: flex;
+    flex-: right;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    border-bottom-color: black;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+}
+
+.info-content{
+    opacity: 1 !important;
+    display:inline-flex;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+}
+
+.fade-in-2 {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+}
+
+
+.top-section {
+    width: 100%; /*Make the width of our box take up the entire page */
+    height: 500px; /* This represents the height of the box*/
+    padding: 20px; /* The ammount of space to keep between the content and the borders of the box*/
+
+    display: flex; /*Allows for a flexible display*/
+    flex-direction: column; /*Each new div will be placed below the last*/
+    justify-content: center; /* Horizontally Centers the Content */
+    align-items: center; /* Vertically Centers the Contents */
+
+    background-color: black;
+    background-image: url("../img/screenshot_top.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.top-text {
+  color: white; /*Set the color of the text*/
+  font-size: 28px; /*Set the size of the text*/
+  font-family: "Patua One", cursive; /*Change how the text looks*/
+  padding: 20px;
+  text-align: center;
+  
+  /*Set border properties!*/
+  border-color: white;
+  border-width: 3px;
+  border-style: solid;
+  
+}
+
+#logo{
+    margin-bottom: 250px;
+}
+
+#play-button{
+    position: absolute;
+    margin-top: 35px;
+    cursor: pointer;
+}
+
+#play-button:hover{
+    opacity: 1 !important;
+}
+
+
+
+
+/*////////////////////////////////////////
+/ Styling for the Middle Part of the Page
+////////////////////////////////////////*/
+
+.middle-image{
+  width: 100%;
+  overflow: hidden;
+    opacity: 1;
+}
+
+.middle-image-text{
+  position: absolute;
+  color: white;
+  font-size: 32px;
+  font-family: 'Patua One', cursive;
+}
+
+.middle-text{
+  padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+    max-width: 1200px;
+}
+
+.middle-section
+{
+    display: flex; /*Allows for a flexible display*/
+    flex-direction: row; /*Each new div will be placed below the last*/
+    justify-content: center; /* Horizontally Centers the Content */
+    align-items: center; /* Vertically Centers the Contents */
+    text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+    .centered-black-section {
+        max-height: 400px; /*Limit the max height to 400*/
+        overflow: hidden; /*Hide the contents if they grow outsize of me!*/
+        display: flex; /*Allows for a flexible display*/
+        flex-direction: row; /*Each new div will be placed below the last*/
+        justify-content: space-around; /* Horizontally Centers the Content */
+        align-items: center; /* Vertically Centers the Contents */
+        background-color: black;
+        min-height: 200px;
+    }
+
+    .centered-black-section img{
+        width: 15%;
+        margin: 30px;
+    }
+
+    #indie-megabooth-logo{
+        width: 20%;
+    }
+
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+    .centered-black-section {
+        max-height: 400px; /*Limit the max height to 400*/
+        overflow: hidden; /*Hide the contents if they grow outsize of me!*/
+        display: flex; /*Allows for a flexible display*/
+        flex-direction: row; /*Each new div will be placed below the last*/
+        justify-content: space-around; /* Horizontally Centers the Content */
+        align-items: center; /* Vertically Centers the Contents */
+        background-color: black;
+        min-height: 200px;
+    }
+
+    .centered-black-section img{
+        width: 25%;
+        margin: 15px;
+    }
+
+    #indie-megabooth-logo{
+        width: 30%;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+    .centered-black-section {
+        display: flex; /*Allows for a flexible display*/
+        flex-direction: column; /*Each new div will be placed below the last*/
+        justify-content: space-around; /* Horizontally Centers the Content */
+        align-items: center; /* Vertically Centers the Contents */
+        background-color: black;
+
+    }
+
+    .centered-black-section img{
+        width: 50%;
+        margin: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+/*////////////////////////////////////////
+/ General Classes. Apply these to anything!
+////////////////////////////////////////*/
+
+/* Apply this class to anything and make it
+look like a button! */
+
+/*Apply this class to give space around an object*/
+.space-around{
+  padding: 10px;
+}
+
+@media screen and (min-width: 400px){
+    .upixels{
+        color: white;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .upixels{
+        color: white;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+}
+
+.border-button {
+  width: fit-content;
+  height: fit-content;
+  padding: 3px;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  border-color: black;
+  color: white;
+  border: solid;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/*////////////////////////////////////////
+/ All this styling is for the Dialog Box!
+////////////////////////////////////////*/
+
+.dialog {
+
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+
+  display: flex; /*Allows for a flexible display*/
+  justify-content: center; /* Horizontally Centers the Content */
+  align-items: center; /* Vertically Centers the Contents */
+
+  width: 100%; /* Full width */
+  min-width: 340px;
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+
+  z-index: 1; /* Sit on top */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+  font-family: "Oswald", sans-serif;
+}
+
+/* Modal Content Box */
+.dialog-box {
+  opacity: 0;
+  /*transition: opacity 400ms ease-in;*/
+  width: 75%;
+  max-width: 640px;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 2; /* Sit on top */
+  background-color: white; /* Fallback color */
+    top: 10%;
+
+}
+
+.dialog-header {
+  padding: 10px;
+  background-color: #e89b25;
+  font-size: 18px;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.dialog-text {
+  color: black;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.dialog-buttons {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 20px;
+  color: white;
+}
+
+.dialog-button {
+  width: 40%;
+  background-color: dimgray;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+#trailer{
+    margin-bottom: 10px;
+}
+
+/* The Close Button */
+.close-button {
+  float: right;
+  color: white;
+  opacity: 0.7;
+  font-size: 24px;
+}
+
+.close-button:hover {
+  color: white;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.border-button:hover, .help-button:hover, .dialog-button:hover {
+  background-color: #d742a1;
+  cursor: pointer;
+}
+
+
+a:link,
+a:active,
+a:visited,
+a:hover{
+    color:inherit;
+    text-decoration: none;
+}
