@@ -196,7 +196,47 @@ body,
 
 
 
+/* --- --- screeenshots --- --- */
 
+.screenshots
+{
+
+    padding: 30px 0px 30px 0px;
+    margin-top: 40px;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.screenshots img
+{
+    width: 428px;
+    opacity: 1;
+    margin: 10px;
+
+    -webkit-transition: opacity 0.25s;
+    -moz-transition: opacity 0.25s;
+    transition: opacity 0.25s;
+
+    -webkit-transition: width 0.25s;
+    -moz-transition: width 0.25s;
+    transition: width 0.25s;
+}
+
+.screenshots img:hover
+{
+    opacity: .95;
+    box-shadow: 0px 0px 4px #000000;
+    width: 438px;
+}
+
+.screenshots .end
+{
+    margin-right: 0px;
+}
 
 
 

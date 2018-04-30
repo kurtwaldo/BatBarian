@@ -73,6 +73,14 @@ $( document ).ready(function() {
         $("#play-button").css("opacity", ".5");
     }, "1000")
 
+    //Screen Shots JS
+    $('.screenshots').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery:{enabled:true},
+        removalDelay: 200
+    });
+
     YOUTUBE_VIDEO_MARGIN=0;
     if(typeof YOUTUBE_VIDEO_MARGIN == 'undefined') {
         YOUTUBE_VIDEO_MARGIN=0;
