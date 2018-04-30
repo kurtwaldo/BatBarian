@@ -61,6 +61,13 @@ body,
 
 }
 
+@media screen and (min-width: 1400px) {
+    .top-section{
+        min-height: 500px;
+        background-position-y: -180px;
+    }
+}
+
 .top-text {
   color: white; /*Set the color of the text*/
   font-size: 28px; /*Set the size of the text*/
@@ -260,6 +267,47 @@ body,
 }
 
 
+.footer {
+    color: white;
+    font-family: "Oswald", sans-serif;
+    background-color: #282424;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+
+}
+
+.footer-text{
+    text-align: center;
+    margin: 30px;
+    margin-top: 50px;
+}
+
+
+.social-icons{
+    font-size: 48px;
+    margin-top: 10 px;
+}
+
+#twitter-icon:hover{
+    color: #00aced;
+}
+
+#facebook-icon:hover{
+    color: #3b5998;
+}
+
+#youtube-icon:hover{
+    color: #bb0000;
+}
+
+#tumblr-icon:hover{
+    color: #33485d;
+}
 
 /*////////////////////////////////////////
 / General Classes. Apply these to anything!
